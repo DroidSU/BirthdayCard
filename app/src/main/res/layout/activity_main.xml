@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+    <com.waynell.library.DropAnimationView
+        android:id="@+id/dropanimationview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:minSize="50dp"
+        app:maxSize="80dp"
+        app:largePercent="80%"
+        app:rate="100"
+        app:xAnimate="true"
+        app:yAnimate="true"
+        app:rotationAnimate="true"/>
+
+    <ImageView
+        android:id="@+id/ballons"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="33dp"
+        android:visibility="invisible"
+        android:src="@drawable/hearts" />
+
+    <ImageView
+        android:id="@+id/popUpBalloon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="174dp"
+        android:alpha="0"
+        android:src="@drawable/popballoon" />
+
+    <ImageView
+        android:id="@+id/pictures"
+        android:layout_width="230dp"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:alpha="0.5"/>
+
+    <TextView
+        android:id="@+id/wish"
+        android:layout_width="230dp"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"/>
+</RelativeLayout>
